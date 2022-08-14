@@ -1,9 +1,9 @@
 <div class="mt-4" [formGroup]="checkoutForm">
     <h4 class="mb-3">Choose your delivery method</h4>
     <div class="row" formGroupName="deliveryForm">
-        <div class="col-6 form-group" *ngFor="let method of deliveryMethods">
-            <input type="radio" class="custom-control-input" formControlName="deliveryMethod" id={{ method.id }} value={{ method.id }} (click)="setShippingPrice(method)">
-            <label class="custom-control-label" for="{{ method.id }}">
+        <div class="col-6 mb-3" *ngFor="let method of deliveryMethods">
+            <input type="radio" class="form-check-input" id={{method.id}} value={{method.id}} formControlName="deliveryMethod" (click)="setShippingPrice(method)">
+            <label for="{{ method.id }}" class="form-check-label ms-2">
                 <strong>{{ method.shortName }} - {{ method.price | currency }}</strong>
                 <br />
                 <span class="label-description">{{ method.description }}</span>

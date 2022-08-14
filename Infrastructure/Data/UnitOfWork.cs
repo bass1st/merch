@@ -1,9 +1,3 @@
-using System;
-using System.Collections;
-using System.Threading.Tasks;
-using Core.Entities;
-using Core.Interfaces;
-
 namespace Infrastructure.Data
 {
     public class UnitOfWork : IUnitOfWork
@@ -35,7 +29,6 @@ namespace Infrastructure.Data
             {
                 var repositoryType = typeof(GenericRepository<>);
                 var repositoryInstance = Activator.CreateInstance(repositoryType.MakeGenericType(typeof(TEntity)), _context);
-
                 _repositories.Add(type, repositoryInstance);
             }
 

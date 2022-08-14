@@ -1,7 +1,4 @@
-using System.Linq;
-using System.Threading.Tasks;
 using Core.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
 
 namespace Infrastructure.Identity
 {
@@ -19,8 +16,8 @@ namespace Infrastructure.Identity
                     Address = new Address
                     {
                         FirstName = "Bob",
-                        LastName = "Bobbity",
-                        Street = "10 The street",
+                        LastName = "Jones",
+                        Street = "10 Main street",
                         City = "New York",
                         State = "NY",
                         ZipCode = "90210"

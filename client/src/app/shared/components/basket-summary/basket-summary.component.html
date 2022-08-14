@@ -15,9 +15,9 @@
                     <th scope="row">
                         <div class="p-2">
                             <img class="img-fluid" style="max-height: 50px;" src="{{ item.pictureUrl }}" alt="{{ item.productName }}">
-                            <div class="ml-3 d-inline-block align-middle">
+                            <div class="d-inline-block align-middle ms-3">
                                 <h5 class="mb-0">
-                                    <a class="text-dark" routerLink="/shop/{{ item.id || item.productId }}">{{ item.productName }}</a>
+                                    <a class="text-dark text-decoration-none" routerLink="/shop/{{ item.id || item.productId }}">{{ item.productName }}</a>
                                 </h5>
                                 <span class="text-muted font-weight-normal font-italic d-block" *ngIf="item.type">Type: {{ item.type }}</span>
                             </div>   
@@ -26,7 +26,7 @@
                     <td class="align-middle"><strong>{{ item.price | currency }}</strong></td>
                     <td class="align-middle">
                         <div class="d-flex align-items-center" [class.justify-content-center]="!isBasket">
-                            <i class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2em;"
+                            <i class="fa fa-minus-circle text-warning me-2" style="cursor: pointer; font-size: 2em;"
                                 *ngIf="isBasket" (click)="decrementItemQuantity(item)"></i>
                             <span class="font-weight-bold" style="font-size: 1.5em;">{{ item.quantity }}</span>
                             <i class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2em;"

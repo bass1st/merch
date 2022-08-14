@@ -1,8 +1,4 @@
-using System.Security.Claims;
-using System.Threading.Tasks;
 using Core.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Extensions
 {

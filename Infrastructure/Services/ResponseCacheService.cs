@@ -1,7 +1,3 @@
-using System;
-using System.Text.Json;
-using System.Threading.Tasks;
-using Core.Interfaces;
 using StackExchange.Redis;
 
 namespace Infrastructure.Services
