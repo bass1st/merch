@@ -1,9 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
-@import "../node_modules/bootswatch/dist/united/bootstrap.min.css";
+@import "../node_modules/bootswatch/dist/superhero/bootstrap.min.css";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "../node_modules/ngx-toastr/toastr.css";
+
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .xng-breadcrumb-root {
     padding: 8px 16px;
@@ -13,7 +23,6 @@
 
 label.xng-breadcrumb-trail {
     margin-bottom: 0;
-    color: orange;
 }
 
 .xng-breadcrumb-separator {
