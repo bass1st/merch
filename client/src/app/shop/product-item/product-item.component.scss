@@ -16,6 +16,10 @@
     }
 }
 
+.img-fluid {
+    background-color: #4c9be8;
+}
+
 .hover-overlay {
     position: absolute;
     width: 100%;
@@ -24,11 +28,11 @@
     left: 0;
     background: rgba(255,255,255,0.5);
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 300ms;
 
     & button {
         z-index: 1000;
-        transition: all 0.5s;
+        transition: all 300ms;
     }
     & button:first-of-type {
         transform: translateX(-20px);
