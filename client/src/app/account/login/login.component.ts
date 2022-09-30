@@ -34,4 +34,8 @@ export class LoginComponent implements OnInit {
       console.log(error);
     });
   }
+
+  cancel() {
+    this.router.navigateByUrl('/');
+  }
 }
