@@ -1,5 +1,5 @@
-<div *ngIf="(basket$ | async) === null">
-    <p>There are no items in your basket.</p>
+<div class="row text-center mt-5" *ngIf="(basket$ | async) === null">
+    <h5>There are no items in your basket.</h5>
 </div>
 <div *ngIf="basket$ | async">
     <div class="container">
