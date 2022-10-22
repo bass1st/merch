@@ -79,7 +79,7 @@ namespace Infrastructure.Services
 
         public async Task<Order> UpdateOrderPaymentFailed(string paymentIntentId)
         {
-            var spec = new OrderByPaymentIntentWithItemsSpecification(paymentIntentId);
+            var spec = new OrderByPaymentIntentIdSpecification(paymentIntentId);
 
             var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
 
@@ -96,7 +96,7 @@ namespace Infrastructure.Services
 
         public async Task<Order> UpdateOrderPaymentSucceeded(string paymentIntentId)
         {
-            var spec = new OrderByPaymentIntentWithItemsSpecification(paymentIntentId);
+            var spec = new OrderByPaymentIntentIdSpecification(paymentIntentId);
 
             var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
 

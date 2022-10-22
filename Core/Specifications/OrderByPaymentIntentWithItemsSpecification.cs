@@ -1,9 +1,0 @@
-namespace Core.Specifications
-{
-    public class OrderByPaymentIntentWithItemsSpecification : BaseSpecifcation<Order>
-    {
-        public OrderByPaymentIntentWithItemsSpecification(string paymentIntentId) : base(o => o.PaymentIntentId == paymentIntentId)
-        {
-        }
-    }
-}
