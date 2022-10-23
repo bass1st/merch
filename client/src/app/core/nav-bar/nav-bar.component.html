@@ -27,20 +27,20 @@
                         </a>
                     </li>
                 </ul>
+                <div *ngIf="(currentUser$ | async) === null">
+                    <button class="btn btn-secondary mx-2" routerLink="/account/login">Login</button>
+                    <button class="btn btn-secondary mx-2" routerLink="/account/register">Register</button>
+                </div>
             </div>
         </div>
         <button class="btn position-relative" style="border: none;" routerLink='/basket'>
             <i class="fa fa-shopping-cart fa-2x"></i>
             <span class="badge badge-pill badge-primary rounded-circle qty-indicator" *ngIf="(basket$ | async) as basket">{{ basket.items.length }}</span>
         </button>
-        <div *ngIf="(currentUser$ | async) === null">
-            <button class="btn btn-secondary mx-2" routerLink="/account/login">Login</button>
-            <button class="btn btn-secondary mx-2" routerLink="/account/register">Register</button>
-        </div>
         <ng-container *ngIf="(currentUser$ | async) as user">
             <div class="dropdown" dropdown>
                 <a class="dropdown-toggle" dropdownToggle>
-                    <strong>Welcome {{ user.displayName }}</strong>
+                    <strong>{{ user.displayName }}</strong>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" *dropdownMenu>
                     <a class="dropdown-item d-flex align-items-center py-2" routerLink="/basket">
