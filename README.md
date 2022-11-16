@@ -2,7 +2,7 @@
 
 eCommerce PWA starter built on [Angular 12](https://angular.io), [Bootstrap 5](https://getbootstrap.com/), [.NET 6](https://dotnet.microsoft.com/en-us/) and [PostgreSQL](https://www.postgresql.org/), with [Stripe](https://stripe.com/) integration. Fully responsive UI with blazing fast backend (featuring new .NET 6 hosting model, Unit of Work / Generic Repository with Specification pattern, and [Entity Framework Core](https://learn.microsoft.com/en-us/ef/) ORM).
 
-[Live Demo](https://iguman.com)
+[Live Demo](https://merchshop.one)
 
 ## Features
 
